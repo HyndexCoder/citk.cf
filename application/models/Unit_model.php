@@ -58,8 +58,10 @@ class Unit_model extends MY_model{
     }
 
     public function get_random($limit = 20){
-        //SELECT col1 FROM tbl ORDER BY RAND() LIMIT 10;
-        
+        $this->db->order_by('RAND()');
+        $res = $this->db->get($this->_tablename, $limit)->result_array();
+
+        return $res;
     }
 
     public function update($id, $title, $subject, $class, $branch){
