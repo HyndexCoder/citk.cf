@@ -33,3 +33,5 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 # Custom
 system/*
 .edit_logs/*
+application/controllers/Test.php
+application/models/Test_model.php
