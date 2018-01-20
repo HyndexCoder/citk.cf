@@ -21,12 +21,15 @@ class Main extends MY_Controller {
 	public function index()
 	{
 		$this->load->model('branch_model');
+		$this->load->model('unit_model');
 		
 		$branches = $this->branch_model->get_all();
+		$units = $this->unit_model->get_random();
 
 		$this->load->view('header');
 		$this->load->view('main', array(
-			'branches' => $branches
+			'branches' => $branches,
+			'units' => $units
 		));
 		$this->load->view('footer');
 	}

@@ -7,6 +7,11 @@
     vertical-align: top;
     text-align:center;
 }
+.units-div>a{
+    color:#999;
+    margin-left:10px;
+    font-size: 13px;
+}
 </style>
 
 <div class="w3-padding w3-center w3-xxlarge w3-margin" style="background-image:url('<?=base_url('assets/images/cit-main-image.png')?>'); background-position:center; background-repeat: no-repeat; height:250px;position:relative;">
@@ -25,4 +30,13 @@
 </a>
 <?php endforeach;?>
 
+</div>
+
+<div class="units-div w3-padding w3-margin">
+<span>Some random units:</span>
+<?php
+//Random units for SEO
+foreach ($units as $unit):?>
+<a href="<?=site_url('unit/'.$unit['id'])?>"><?=htmlspecialchars($unit['title'])?></a>
+<?php endforeach;?>
 </div>
