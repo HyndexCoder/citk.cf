@@ -1,5 +1,16 @@
-# CITK.cf
-<blackquote>citk.cf is a website of the CITians, by the CITians, and for the CITians.</blackquote>
+# Classnotes in PHP
 
+A [CodeIgniter](https://codeigniter.com/) based website for hosting classnotes
 
-### [citk.cf](http://citk.cf) host all the class notes for [Central Institute of Technology, Kokrajhar](http://cit.ac.in/).
+### Tech stack
+
+Database: MySQL
+
+PHP Framework: [CodeIgniter](https://codeigniter.com/)
+
+Frontend:
+* [jQuery](https://jquery.com/)
+* [W3.CSS](https://www.w3schools.com/w3css/)
+* and ofcourse plain HTML, CSS and JavaScript
+
+[View live demo](http://classnotes.snehanshu.tech)
